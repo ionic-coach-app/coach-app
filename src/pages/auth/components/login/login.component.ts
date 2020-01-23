@@ -32,7 +32,7 @@ export class LoginComponent extends Extender implements OnInit {
       .signInWithEmail(this.model)
       .then(() => {
         this.loading = false;
-        this.gotoPage(this.routes.intro);
+        this.gotoPage('/intro');
       })
       .catch((error) => {
         this.toast(error.message);

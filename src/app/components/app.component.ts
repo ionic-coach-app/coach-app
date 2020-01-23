@@ -18,32 +18,47 @@ export class AppComponent extends Extender {
    */
   public appPages = [
     {
-      title: 'intro',
+      title: 'Messages',
       url: this.routes.intro,
       icon: 'assets/icon/home.svg'
     },
     {
-      title: 'blogs',
+      title: 'Account/Billing',
       url: this.routes.blogs,
       icon: 'assets/icon/bag.svg'
     },
     {
-      title: 'gyms',
+      title: 'My Sessions',
       url: this.routes.gyms,
       icon: 'assets/icon/activity.svg'
     },
     {
-      title: 'trainers',
+      title: 'My Library',
       url: this.routes.trainers,
       icon: 'assets/icon/activity2.svg'
     },
     {
-      title: 'Shop',
+      title: 'Peer Community',
       url: this.routes.shop,
       icon: 'assets/icon/cart.svg'
     },
     {
-      title: 'settings',
+      title: 'Coaching Store',
+      url: this.routes.settings,
+      icon: 'assets/icon/setting.svg'
+    },
+    {
+      title: 'About Us',
+      url: this.routes.about,
+      icon: 'assets/icon/setting.svg'
+    },
+    {
+      title: 'Contact Support',
+      url: this.routes.settings,
+      icon: 'assets/icon/setting.svg'
+    },
+    {
+      title: 'Social',
       url: this.routes.settings,
       icon: 'assets/icon/setting.svg'
     }

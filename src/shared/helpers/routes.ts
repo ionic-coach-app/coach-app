@@ -18,6 +18,7 @@ export class Routes {
     shopSearch: '/shop/search',
     shopComplete: '/shop/complete',
     profile: '/profile',
+    about: '/walkthrough',
   };
 }
 export interface IRoutes {
@@ -39,4 +40,5 @@ export interface IRoutes {
   shopSearch: string;
   shopComplete: string;
   profile: string;
+  about: string;
 }

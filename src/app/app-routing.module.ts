@@ -21,6 +21,10 @@ const routes: Routes = [
     canActivate: [LoginGuard],
     path: 'profile',
     loadChildren: '../pages/profile/profile.module#ProfileModule',
+  }, {
+    canActivate: [LoginGuard],
+    path: 'walkthrough',
+    loadChildren: '../pages/walkthrough/walkthrough.module#WalkthroughModule',
   },
   {
     canActivate: [LoginGuard],
@@ -63,4 +67,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

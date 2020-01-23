@@ -1,7 +1,7 @@
 <ion-content>
   <div class="container">
     <div class="container__content">
-      <div class="container__content__center">
+      <!-- <div class="container__content__center">
         <div class="title">Register</div>
         <div class="subtitle">create an account, its a good idea!
         </div>
@@ -55,10 +55,45 @@
           </small>
         </div>
 
+      </div> -->
+
+      <div class="container__content__center">
+        <div class="text-center">
+          <img src="../../../../assets/images/logo/temp-logo.jpg" class="logo-rounded" alt="..."><br>
+          <img src="../../../../assets/images/profile/user.jpg" class="rounded" alt="...">
+        </div>
+        <!-- <ion-avatar class="text-center">
+          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        </ion-avatar> -->
+        <div style="margin-top: 15px;margin-bottom: 10px;"> <b>Are you a ?</b></div>
+        <div>
+          <span class="coach-type"><b>Member</b></span>
+          <span class="coach-type"><b>Coach</b></span>
+        </div>
+        <div style="margin-top: 15px;margin-bottom: 10px;">
+          <ion-list>
+            <ion-item>
+              <ion-input type="text" placeholder="Email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input type="text" placeholder="Password"></ion-input>
+            </ion-item>
+          </ion-list>
+        </div>
+        <div>
+          <p>Not a Member Yet?</p>
+          <p>
+            <button class="signUp-btn">Sign Up</button>
+          <!-- <span><ion-button  (click)="gotoPage(routes.login)" color="primary">Sign Up</ion-button></span>  -->
+        </p>
+        <p>
+
+          <span style="color: #62C9F9; text-decoration: underline;">Take a Tour </span>
+        </p>
+        </div>
       </div>
+
     </div>
-    <div class="other-options">
-      <p>Already have an account? <a (click)="gotoPage(routes.login)">Sign in</a></p>
-    </div>
+ 
   </div>
 </ion-content>

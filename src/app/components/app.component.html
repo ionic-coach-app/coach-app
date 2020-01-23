@@ -1,17 +1,17 @@
 <ion-app>
   <ion-split-pane>
     <ion-menu>
+      <div class="profile" *ngIf="auth$.user$ | async as user" (click)="gotoPage(routes.profile)">
+        <div class="profile__image" [image-loader]="user.profileImage"></div>
+        <div class="profile__title">{{ user.fullname }}</div>
+      </div>
       <ion-content>
-        <div class="container">
-          <div class="profile" *ngIf="auth$.user$ | async as user" (click)="gotoPage(routes.profile)">
-            <div class="profile__image" [image-loader]="user.profileImage"></div>
-            <div class="profile__title">{{ user.fullname }}</div>
-          </div>
+        <div class="container" style="background-color: black;">
           <div class="menu-list">
             <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
               <div class="menu-list__item" routerLinkActive="active" [routerDirection]="'root'" [routerLink]="[p.url]">
-                <ion-icon slot="start" [src]="p.icon"></ion-icon>
-                <span>{{ p.title }}</span>
+                <!-- <ion-icon slot="start" [src]="p.icon"></ion-icon> -->
+                <span style="background-color: white;">{{ p.title }}</span>
               </div>
             </ion-menu-toggle>
           </div>

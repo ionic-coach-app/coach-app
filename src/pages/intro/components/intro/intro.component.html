@@ -1,22 +1,25 @@
 <ion-header>
-  <ion-toolbar color="gradient">
+  <ion-toolbar class="my-toolbar">
     <ion-buttons slot="start">
       <ion-button (click)="toggleMenu()">
         <ion-icon slot="icon-only" color="white" size="small" src="assets/icon/menu1.svg"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>Welcome</ion-title>
+    <ion-title color="white"><b>ConsciousCoach</b></ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="openOptions()">
         <ion-icon slot="icon-only" color="white" size="small" name="more" mode="md"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
+  <ion-toolbar color="gradient">
+    <ion-searchbar color="light" placeholder="what are you looking for"></ion-searchbar>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ng-container *ngIf="auth$.user$ | async as user">
-    <h1>Hello, {{ user.fullname && user.fullname.split(' ')[0] }}</h1>
+    <!-- <h1>Hello, {{ user.fullname && user.fullname.split(' ')[0] }}</h1>
     <div class="subtext">How can we help you take care of yourself?</div>
 
     <div class="grid">
@@ -24,6 +27,44 @@
         <ion-icon src="{{ item.icon }}"></ion-icon>
         <span>{{ item.text }}</span>
       </app-simple-item>
-    </div>
+    </div> -->
+    <!-- <img src="../../../../assets/images/blog/74.jpg" alt="">
+   <button class="btn">Button</button> 
+    <p><span class="text-center"><b>Our top picks for you</b></span></p>
+    <ion-slides>
+      <ion-slide class="rounded">
+        <img src="../../../../assets/images/blog/74.jpg" alt="">
+      </ion-slide>
+      <ion-slide class="rounded">
+        <img src="../../../../assets/images/blog/74.jpg" alt="">
+      </ion-slide>
+      <ion-slide class="rounded">
+        <img src="../../../../assets/images/blog/74.jpg" alt="">
+      </ion-slide>
+    </ion-slides> -->
+         <!--banner section-->
+         <div class="banner_main">
+          <img src="../../../../assets/images/blog/74.jpg" alt="">
+             <div class="banner_layer">
+                 <a href="#">My Session</a>
+                 <a href="#">My Scehedule</a>
+                 <a href="#">Support</a>
+             </div>
+         </div>
+         <!--banner section-->
+         
+         <div class="listing_sec">
+          <img src="../../../../assets/images/blog/74.jpg">
+             <div class="listing_sec_layer">
+                 <a href="#">My Conscious Points</a>
+             </div>
+         </div>
+         
+         <div class="listing_sec">
+          <img src="../../../../assets/images/blog/74.jpg">
+             <div class="listing_sec_layer">
+                 <a href="#">My Conscious Points</a>
+             </div>
+         </div>
   </ng-container>
 </ion-content>

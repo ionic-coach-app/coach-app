@@ -2,6 +2,48 @@ ion-content {
   --background: white;
   --color: var(--ion-color-dark);
 
+
+  .logo-rounded {
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+    border: 2px solid #CD6155;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+
+ .rounded {
+   border-radius: 20px;
+   height: 85px;
+   width: 85px;
+ }
+
+ .coach-type {
+   margin-left: 5px;
+   border: 1px solid #62C9F9;
+   padding: 4px 5px 4px 5px
+ }
+
+.signUp-btn {
+  padding: 3px;
+  background-color: #62C9F9;
+  color: white;
+}
+
+.signUp-btn {
+  background-color: #62C9F9;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+  margin: 4px 2px;
+  padding: 12px 28px;
+  cursor: pointer;
+}
+
   .container {
     height: 100%;
     text-align: center;

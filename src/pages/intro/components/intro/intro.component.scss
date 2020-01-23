@@ -9,6 +9,52 @@
     color: var(--ion-color-stable);
   }
 
+  .my-toolbar{
+    --background:  #62C9F9;
+}
+
+.rounded {
+  border-radius: 20px;
+  height: 85px;
+  width: 85px;
+}
+
+/****************header css start here*****************/
+
+
+
+.banner_main{ float: left; margin: 0px; padding: 0px; width: 100%; position: relative;}
+.banner_main img{float: left; margin: 0px; padding: 0px; width: 100%;}
+
+.banner_layer{ position: absolute; width: 100%;text-align: center; z-index: 100; top: 20px;}
+
+.banner_layer a {
+    background-color: #4ac5fb;
+    color: #fff;
+    border-radius: 50px;
+    border: solid 1px #fff;
+    padding: 6px 15px;
+    margin: 0 5px;
+}
+
+
+
+.listing_sec{ float: left; margin: 0px; padding: 0px; width: 100%; position: relative;}
+
+.listing_sec img{float: left; margin: 0px; padding: 0px; width: 100%;}
+
+.listing_sec_layer{ position: absolute; width: 100%;text-align: center; z-index: 100; bottom: 30px;}
+
+.listing_sec_layer a {
+    background-color: rgba(74, 197, 251, 0.85);
+    color: #fff;
+    border-radius: 0px;
+    border: solid 1px #fff;
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
   .grid {
     max-width: 100%;
     display: grid;
